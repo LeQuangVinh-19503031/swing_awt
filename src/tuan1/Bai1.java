@@ -2,8 +2,8 @@ package tuan1;
 
 import java.awt.Color;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -17,11 +17,12 @@ public class Bai1 extends JFrame{
 	JButton buttonGiai, buttonThoat, buttonXoa;
 	
 	public Bai1() {
+		setLocation(500,300);
 		setTitle("Giai phuong trình bậc 2");
 		setSize(400,300);
 		JPanel panelNorth = new JPanel();
 		// NORTH
-		JLabel labelTitle = new JLabel("Giải Phương trình");
+		JLabel labelTitle = new JLabel("Giải Phương trình bậc hai");
 		add(java.awt.BorderLayout.NORTH, panelNorth);
 		panelNorth.add(labelTitle);
 		panelNorth.setBackground(Color.GRAY);
@@ -111,6 +112,7 @@ public class Bai1 extends JFrame{
 		buttonThoat.addActionListener(e->{
 			System.exit(0);
 		});
+		setDefaultCloseOperation(this.EXIT_ON_CLOSE);
 	}
 	
 	public static void main(String[] args) {
